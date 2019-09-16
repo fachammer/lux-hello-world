@@ -1,0 +1,10 @@
+(.module:
+  [lux #*
+   [control 
+    ["." io (#+ io)]
+    [parser
+     [cli (#+ program:)]]]])
+
+(program: args
+  (io
+    (log! "Hello World!")))
